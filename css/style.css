@@ -1,0 +1,365 @@
+/* стили для index.html */
+
+/* tagline */
+.tagline {
+  padding: 200px 0;
+  margin: 0 auto;
+  max-width: 1600px;
+  /* height: 600px; */
+
+  background-color: #2f303a;
+  background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/tagline/taglinebg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tagline .title {
+  margin: 0 auto 30px auto;
+
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.button-primary {
+  padding: 10px 32px;
+
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  border: none;
+  text-align: center;
+  line-height: 1.87;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button-primary:hover,
+.button-primary:focus {
+  background: #188ce8;
+}
+
+/* features */
+
+.features {
+  padding: 94px 0;
+}
+
+.features .list {
+  display: flex;
+}
+
+.features .properties::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-size: 70px 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/features/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/features/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/features/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/features/astronaut.svg);
+}
+
+.features .properties:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features .properties {
+  width: 270px;
+}
+
+.features .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+
+.features .text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+}
+
+/* activity */
+
+.activity {
+  padding-bottom: 94px;
+}
+
+.activity .list {
+  display: flex;
+}
+
+.activity .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.activity .title,
+.team .title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+/* team */
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: #f5f4fa;
+}
+
+.team .list {
+  display: flex;
+}
+
+.cards:not(:last-child) {
+  margin-right: 30px;
+}
+
+.cards {
+  background-color: var(--white-color);
+  width: 270px;
+  min-height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team .employee {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+.team .profession {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+.cards .social {
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  margin-bottom: 30px;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white-color);
+  text-decoration: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-link:hover svg,
+.social-link:focus svg {
+  fill: var(--white-color);
+}
+
+/* button */
+
+.button {
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  border: none;
+  text-align: center;
+  color: var(--primary-text-color);
+  background-color: var(--button-bg-color);
+  border-radius: 4px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+/* Постоянные клиенты */
+
+.clients {
+  padding: 94px 0;
+}
+
+.clients-title {
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.clients-item {
+  display: flex;
+  align-items: center;
+}
+
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  fill: #AFB1B8;
+
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+
+/* Стили для portfolio.html */
+
+.portfolio {
+  padding: 94px 0;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 34px;
+}
+
+.portfolio .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects {
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  width: 370px;
+  min-height: 404px;
+  border: 1px solid #eeeeee;
+}
+
+.projects:nth-child(3n) {
+  margin-right: 0;
+}
+
+.projects:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.projects:hover,
+.projects:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio .text {
+  padding: 20px 24px;
+}
+
+.filters .btn:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio .title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.portfolio .type {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--secondary-text-color);
+}
+
